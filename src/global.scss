@@ -1,0 +1,8 @@
+$largura: 760px;
+$cor_principal: #30503a;
+
+@mixin mobile {
+    @media (max-width: #{largura}) {
+        @content
+    }
+}

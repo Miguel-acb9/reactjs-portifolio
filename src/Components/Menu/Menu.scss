@@ -1,0 +1,47 @@
+@import '../../global.scss';
+
+.menu {
+    top: 0;
+    z-index: 2;
+    width: 30vh;
+    right: -30vh;
+    display: flex;
+    height: 100vh;
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s ease;
+    background: linear-gradient(70deg, #ccc 10%,#fff 40%, transparent);
+
+    &.ativo {
+        right: 0;
+    }
+
+    ul {
+        margin: 0;
+        padding-top: 30vh;
+        padding-bottom: 20vh;
+        width: 75%;
+        list-style: none;
+        font-weight: 300;
+
+        li {
+            margin-bottom: 30px;
+
+            a {
+                color: black;
+                font-size: 25px;
+                padding-right: 5px;
+                text-decoration: none;
+            }
+
+            &:hover {
+                font-weight: 500;
+            }
+        }
+    }
+    .redes-sociais:hover {
+        color: red;
+    }
+}

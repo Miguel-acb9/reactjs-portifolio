@@ -1,0 +1,24 @@
+.App {
+    height: 100vh;
+
+    .secoes {
+        top: 70px;
+        width: 100%;
+        position: relative;
+        scrollbar-width: none; // Para Firefox
+        scroll-behavior: smooth;
+        background-color: gray;
+        height: calc(100vh - 70px);
+        scroll-snap-type: y mandatory;
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    
+        > * {
+            width: 100vw;
+            scroll-snap-align: start;
+            height: calc(100vh - 70px);
+        }
+    }
+}
