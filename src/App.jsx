@@ -3,10 +3,13 @@ import './App.scss';
 import { useState } from 'react';
 import Menu from './Components/Menu/Menu';
 import Intro from './Components/Intro/Intro';
+import Rodape from './Components/Rodape/Rodape';
 import Contato from './Components/Contato/Contato';
-import Trabalhos from './Components/Trabalhos/Trabalhos';
+import SobreMim from './Components/SobreMim/SobreMim';
+import Servicos from './Components/Servicos/Servicos';
 import Portifolio from './Components/Portifolio/Portifolio';
-import Depoimentos from './Components/Depoimentos/Depoimentos';
+import Habilidades from './Components/Habilidades/Habilidades';
+import Qualificacao from './Components/Qualificacao/Qualificacao';
 import MenuSuperior from './Components/MenuSuperior/MenuSuperior';
 
 function App() {
@@ -17,15 +20,30 @@ function App() {
         <div className="App">
             <MenuSuperior menuAberto={menuAberto} setMenuAberto={setMenuAberto}/>
             <Menu menuAberto={menuAberto} setMenuAberto={setMenuAberto}/>
-            <div className="secoes"> 
+            <div className="secoes">
                 <Intro/>
+                <SobreMim/>
+                <Servicos/>
                 <Portifolio/>
-                <Trabalhos/>
-                <Depoimentos/>
+                <Qualificacao/>
+                <Habilidades/>
                 <Contato/>
+                <footer>
+                    <Rodape/>
+                </footer> 
             </div>
         </div>
     );
 }
 
 export default App;
+
+/*
+
+Me sinto tão Sol
+Sem ré e sem só, eu brilho
+Me sinto tão Sol
+Sem ré e sem só, eu ilumino
+
+
+*/

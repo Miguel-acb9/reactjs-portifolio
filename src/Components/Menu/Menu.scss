@@ -5,9 +5,9 @@
     z-index: 2;
     width: 30vh;
     right: -30vh;
-    display: flex;
     height: 100vh;
-    position: fixed;
+    display: flex;
+    position: absolute;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -18,30 +18,51 @@
         right: 0;
     }
 
-    ul {
-        margin: 0;
-        padding-top: 30vh;
-        padding-bottom: 20vh;
+    .itens {
         width: 75%;
-        list-style: none;
-        font-weight: 300;
-
-        li {
-            margin-bottom: 30px;
-
-            a {
-                color: black;
-                font-size: 25px;
-                padding-right: 5px;
-                text-decoration: none;
-            }
-
-            &:hover {
-                font-weight: 500;
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-weight: 300;
+    
+            li {
+                margin-bottom: 30px;
+    
+                a {
+                    color: black;
+                    font-size: 25px;
+                    text-decoration: none;
+                }
+                
+                &:hover {
+                    font-weight: 500;
+                }
             }
         }
     }
-    .redes-sociais:hover {
-        color: red;
+    
+    .siga-me {
+        bottom: 0px;
+        position: fixed;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+
+        .redes-sociais {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            
+            .item {
+                color: gray;
+                font-size: 20px;
+                padding: 10px 20px;
+            }
+    
+            .item:hover {
+                color: black;
+            }
+        }
     }
 }

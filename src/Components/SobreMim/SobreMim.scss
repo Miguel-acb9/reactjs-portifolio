@@ -1,0 +1,35 @@
+
+.sobre-mim {
+    position: relative;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../Assets/FundoBanner.png);
+
+    .sobre-mim-vertical {
+        top: 10vh;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        text-align: center;
+
+        h2 {
+            color: black;
+            font-weight: 500;
+            font-size: 2.5em;
+        }
+        h3 {
+            color: gray;
+            font-weight: 300;
+            font-size: 1.2em;
+        }
+
+        .sobre-mim-horizontal {
+            display: flex;
+            padding-top: 5vh;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-around;
+        }
+    }
+}

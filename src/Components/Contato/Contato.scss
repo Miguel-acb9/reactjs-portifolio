@@ -1,3 +1,84 @@
 .contato {
-    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+
+    h2 {
+
+    }
+    .esquerda {
+
+    }
+
+    .direita {
+        display: flex;
+        border-radius: 10px;
+        flex-direction: column;
+        background-color: red;
+        
+        form {
+            label {
+
+            }
+
+            input {
+
+            }
+
+            textarea {
+
+            }
+
+            .icone {
+                margin: 0;
+                padding: 0;
+                color: black;
+                font-size: 30px;
+                padding: 0 10px;
+            }
+
+            a {
+                width: 20%;
+                padding: 15px;
+                display: flex;
+                color: black;
+                font-size: 18px;
+                font-weight: 500;
+                margin-top: 20px;
+                background: #eee;
+                align-items: center;
+                border-radius: 10px;
+                text-decoration: none;
+                justify-content: center;
+                transition: all 2s ease;
+                border: solid 1px black;
+            }
+
+            a:hover {
+                color: black;
+                border: 1px solid black;
+                background: linear-gradient(60deg, #888 0% 10%,#999 20%, #aaa 40% 60%, #fff 80%);
+
+                .icone {
+                    animation: scroll-para-baixo 2s infinite;
+                }
+            }
+
+            @keyframes scroll-horizontal {
+                0% {
+                    opacity: 0;
+                    transform: translate(-5px, 0);
+                } 
+                50% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                    transform: translate(5px, 0);
+                }
+            }
+        }
+    }
 }

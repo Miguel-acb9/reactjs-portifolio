@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
 .App {
     height: 100vh;
 
@@ -7,8 +9,8 @@
         position: relative;
         scrollbar-width: none; // Para Firefox
         scroll-behavior: smooth;
-        background-color: gray;
         height: calc(100vh - 70px);
+        background-color: white;
         scroll-snap-type: y mandatory;
         
         &::-webkit-scrollbar {
@@ -19,6 +21,11 @@
             width: 100vw;
             scroll-snap-align: start;
             height: calc(100vh - 70px);
+        }
+
+        footer {
+            box-shadow: 0 5px #ddd;
+            height: 20vh;
         }
     }
 }

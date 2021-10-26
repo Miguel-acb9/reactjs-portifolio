@@ -7,7 +7,7 @@ export default function MenuSuperior({ menuAberto, setMenuAberto }) {
         <div className={'menuSuperior ' + (menuAberto && 'ativo')}>
             <div className='pacote'>
                 <div className='esquerda'>
-                    <img src={Logo} alt="Miguel Alves" width="150"/>
+                    <img src={Logo} alt="Miguel Alves" width="150" height="50"/>
                 </div>
                 
                 <div className='direita'>

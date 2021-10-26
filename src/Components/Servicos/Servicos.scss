@@ -1,0 +1,30 @@
+
+.servicos {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../Assets/FundoBanner.png);
+    
+    .servicos-vertical {
+        width: inherit;
+        height: inherit;
+        position: relative;
+        flex-direction: column;
+
+        text-align: center;
+        background: linear-gradient(to top, #fff 0%, transparent 50%, #fff 90%);
+        
+        .servicos-horizontal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .conteudo {
+                display: flex;
+                border-radius: 10px;
+                flex-direction: column;
+                background-color: red;
+            }
+        }
+    }
+}
