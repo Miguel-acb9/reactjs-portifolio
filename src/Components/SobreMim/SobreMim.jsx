@@ -31,3 +31,10 @@ export default function SobreMim() {
         </section>
     );
 }
+
+/*
+i'm interested in freelance opportunities - especially ambituos or 
+large projects. However, if you have other request or question, 
+dont't hesitate to use the form
+
+*/
