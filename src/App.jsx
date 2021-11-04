@@ -28,9 +28,7 @@ function App() {
                 <Qualificacao/>
                 <Habilidades/>
                 <Contato/>
-                <footer>
-                    <Rodape/>
-                </footer> 
+                <footer><Rodape/></footer> 
             </div>
         </div>
     );

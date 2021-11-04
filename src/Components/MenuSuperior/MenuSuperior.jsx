@@ -1,6 +1,6 @@
 // Importação de módulos e bibliotecas
 import './MenuSuperior.scss';
-import Logo from "../../Assets/Logo.png";
+import Logo from "../../Assets/LogoTransparente.png";
 
 export default function MenuSuperior({ menuAberto, setMenuAberto }) {
     return (

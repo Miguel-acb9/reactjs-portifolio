@@ -1,64 +1,252 @@
-@import '../../global.scss';
+// Estilo da Seção Portifólio
 
 .portifolio {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: blue;
-
-    h1 {
-        font-size: 50px;
-    }
-
-    ul {
-        padding: 0;
-        margin: 10px;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../../Assets/cubos.png);
+    
+    .portifolio_vertical {
+        width: 100%;
+        height: 100%;
         display: flex;
-        cursor: pointer;
-        list-style: none;
-    }
+        position: relative;
+        flex-direction: column;
+        background: linear-gradient(to top, #fff 1%, transparent 90%);
+        
+        .portifolio_horizontal {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #fff, transparent);
+            
+            .titulo {
+                margin: 6vh;
+                text-align: center;
 
-    .conteiner {
-        width: 70%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-
-        .item {
-            width: 220px;
-            height: 150px;
-            display: flex;
-            color: white;
-            margin: 10px 20px;
-            position: relative;
-            position: relative;
-            align-items: center;
-            border-radius: 20px;
-            justify-content: center;
-            transition: all 1s ease;
-            border: 1px solid rgb(240, 239, 239);
-
-            h3 {
-                font-size: 20px;
-                position: absolute;
+                h2 {
+                    color: black;
+                    font-weight: 500;
+                    font-size: 2.5em;
+                }
+                h3 {
+                    color: gray;
+                    font-weight: 300;
+                    font-size: 1.2em;
+                }
             }
 
-            img {
-                z-index: 1;
-                width: 100%;
-                height: 100%;
-                object-fit: cover; 
-            }
+            .conteiner {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
 
-            &:hover {
-                background-color: $cor_principal;
+                .carrossel {
+                    flex: 0.5;
+                    width: 80%;
+                    display: flex;
+                    position: relative;
+                    flex-direction: row;
+                    justify-content: center;
 
-                img {
-                    z-index: 0;
-                    opacity: 0.2;
+                    .butao-proximo {
+                        border: none;
+                        font-size: 20px;
+                        background: transparent;
+                    }
+
+                    .conteudo {
+                        width: 100%;
+                        display: flex;
+                        position: relative;
+                        align-items: center;
+                        justify-content: start;
+                        scroll-behavior: smooth;
+
+                        .elemento {
+                            flex: none;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            
+                            .imagem {
+                                flex: 0.5;
+                                display: flex;
+                                justify-content: end;
+    
+                                img {
+                                    width: auto;
+                                    max-height: 300px;
+                                    object-fit: cover;
+                                    border-radius: 30px;
+                                }
+                            }
+    
+                            .texto {
+                                flex: 0.5;
+                                padding: 2vh 2vh;
+    
+    
+                                h3 {
+                                    font-size: 1.8em;
+                                    font-weight: 500;
+                                    margin-bottom: 3vh;
+                                }
+    
+                                p {
+                                    font-size: 1.2em;
+                                    font-weight: 300;
+                                    margin-bottom: 3vh;
+                                }
+    
+                                .icone {
+                                    margin: 0;
+                                    padding: 0;
+                                    color: black;
+                                    font-size: 30px;
+                                    padding: 5px 10px;
+                                }
+    
+                                a {
+                                    width: 20vh;
+                                    padding: 10px;
+                                    display: flex;
+                                    color: black;
+                                    font-size: 18px;
+                                    font-weight: 500;
+                                    background: #eee;
+                                    align-items: center;
+                                    border-radius: 10px;
+                                    text-decoration: none;
+                                    justify-content: center;
+                                    transition: all 2s ease;
+                                    border: solid 1px black;
+                                }
+            
+                                a:hover {
+                                    color: black;
+                                    border: 1px solid black;
+                                    background: linear-gradient(60deg, #888 0% 10%,#999 20%, #aaa 40% 60%, #eee 80%);
+        
+                                    .icone {
+                                        animation: scroll-para-baixo 2s infinite;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .butao-anterior {
+                        border: none;
+                        font-size: 20px;
+                        background: transparent;
+                    }
+                }
+
+                .banner {
+                    flex: 0.5;
+                    width: 100%;
+                    display: flex;
+                    padding: 5vh 0;   
+                    align-items: center;
+                    justify-content: center;
+
+                    .cartao {
+                        width: 60%;
+                        height: 90%;
+                        display: flex;
+                        cursor: pointer;
+                        overflow: hidden;
+                        position: relative;
+                        border-radius: 15px;
+                        align-items: center;
+                        justify-content: center;
+                        backdrop-filter: blur(3px);
+                        background: rgba(0, 0, 0, 0.1);
+                        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+                        border-top: 1px solid rgba(255, 255, 255, 0.5);
+                        border-left: 1px solid rgba(255, 255, 255, 0.5);  
+
+                        .conteudo {
+                            transition: 0.5s;
+                            padding: 80px 20px;
+                            text-align: start;
+                            
+                            .icone-fundo {
+                                top: -10px;
+                                right: 20px;
+                                font-size: 8em;
+                                position: absolute;
+                                pointer-events: none;
+                                color: rgba(0, 0, 0, 0.05);
+                            }
+    
+                            h3 {
+                                z-index: 1;
+                                color: black;
+                                font-weight: 500;
+                                font-size: 1.8em;
+                            }
+    
+                            p {
+                                font-size: 1.2em;
+                                color: black;
+                                font-weight: 300;
+                                padding: 1.5vh 0;
+                            }
+    
+                            .icone {
+                                margin: 0;
+                                padding: 0;
+                                color: black;
+                                font-size: 30px;
+                                padding: 5px 10px;
+                            }
+
+                            a {
+                                width: 20vh;
+                                padding: 10px;
+                                display: flex;
+                                color: black;
+                                font-size: 18px;
+                                font-weight: 500;
+                                background: #eee;
+                                align-items: center;
+                                border-radius: 10px;
+                                text-decoration: none;
+                                justify-content: center;
+                                transition: all 2s ease;
+                                border: solid 1px black;
+                            }
+        
+                            a:hover {
+                                color: black;
+                                border: 1px solid black;
+                                background: linear-gradient(60deg, #888 0% 10%,#999 20%, #aaa 40% 60%, #eee 80%);
+    
+                                .icone {
+                                    animation: scroll-para-baixo 2s infinite;
+                                }
+                            } 
+                        }                    
+                    }
                 }
             }
         }
+    }
+}
+
+@keyframes scroll-para-baixo {
+    0% {
+        opacity: 0;
+        transform: translate(-5px, 0);
+    } 
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(5px, 0);
     }
 }
