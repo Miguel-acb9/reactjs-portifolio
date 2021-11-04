@@ -11,9 +11,9 @@ export default function Intro() {
                 <div className="intro-horizontal">
                     <div className="esquerda">
                         <div className="redes-sociais">
-                            <a href="https://www.linkedin.com/in/miguel-acb9/" target="_blank"><SiLinkedin className='item'/></a>
-                            <a href="https://github.com/Miguel-acb9/" target="_blank"><SiGithub className='item'/></a>
-                            <a href="https://www.instagram.com/miguel_acb9/" target="_blank"><SiInstagram className='item'/></a>
+                            <a href="https://www.linkedin.com/in/miguel-acb9/" target="_blank" rel="noreferrer"><SiLinkedin className='item'/></a>
+                            <a href="https://github.com/Miguel-acb9/" target="_blank" rel="noreferrer"><SiGithub className='item'/></a>
+                            <a href="https://www.instagram.com/miguel_acb9/" target="_blank" rel="noreferrer"><SiInstagram className='item'/></a>
                         </div>  
                     </div>
                     <div className="direita">

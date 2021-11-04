@@ -1,6 +1,6 @@
 // Importação de módulos e bibliotecas
 import './MenuSuperior.scss';
-import Logo from "../../Assets/LogoTransparente.png";
+
 
 export default function MenuSuperior({ menuAberto, setMenuAberto }) {
     return (
@@ -8,7 +8,7 @@ export default function MenuSuperior({ menuAberto, setMenuAberto }) {
             <div className='pacote'>
                 <div className='esquerda'>
                     <a href="#intro">
-                        <img src={Logo} alt="Miguel Alves"/>
+                        <img src='http://localhost:3000/Assets/LogoPretaTransparente.png' alt="Miguel Alves"/>
                     </a>
                 </div>
                 

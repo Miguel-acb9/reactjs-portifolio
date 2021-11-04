@@ -2,7 +2,9 @@
 
 .sobre-mim {
     display: flex;
-    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-image: url(../../Assets/cubos.png);
 
     .sobre-mim_vertical {
         width: 100%;
@@ -10,10 +12,12 @@
         display: flex;
         position: relative;
         flex-direction: column;
+        background: linear-gradient(to bottom, #fff 1%, transparent 90%);
 
         .sobre-mim_horizontal {
             width: 100%;
             height: 100%;
+            background: linear-gradient(to left, #fff 1%, transparent 90%);
             
             .titulo {
                 margin: 6vh;
@@ -42,7 +46,7 @@
                     flex: 0.5;
                     padding: 3vh;
                     display: flex;
-                    justify-content: end;
+                    justify-content: flex-end;
 
                     .cartao {
                         width: 500px;
@@ -56,6 +60,7 @@
 
                 .descricao {
                     flex: 0.5;
+
                     p {
                         width: 50%;
                     }
@@ -69,7 +74,7 @@
                     }
     
                     a {
-                        width: 40%;
+                        width: 30%;
                         padding: 5px;
                         display: flex;
                         color: white;
@@ -89,21 +94,23 @@
                         background-color: #05558f;
                     }
 
-                    .tecnologias {
+                    .habilidades {
                         width: 50%;
                         text-align: center;
+
                         h4 {
-                            font-size: 1.2em;
-                            padding: 2vh 0;
+                            padding: 1vh 0;
+                            font-size: 1.5em;
+                            text-align: center;
                         }
                         .lista {
-                            display: flex;
-                            color: #0a66c2;
+                            display: inline-block;
                             justify-content: space-between;
 
-                            .icone {
+                            .tecnologias {
+                                margin: 1vh;
+                                font-size: 3vh;
                                 color: #0a66c2;
-                                font-size: 2em;
                             }
                         }
                     }

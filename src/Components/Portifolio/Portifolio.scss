@@ -12,7 +12,7 @@
         display: flex;
         position: relative;
         flex-direction: column;
-        background: linear-gradient(to top, #fff 1%, transparent 90%);
+        background: linear-gradient(to bottom, #fff 1%, transparent 90%);
         
         .portifolio_horizontal {
             width: 100%;
@@ -67,7 +67,7 @@
                         display: flex;
                         position: relative;
                         align-items: center;
-                        justify-content: start;
+                        justify-content: flex-start;
                         scroll-behavior: smooth;
 
                         .elemento {
@@ -81,7 +81,7 @@
                             .imagem {
                                 flex: 0.5;
                                 display: flex;
-                                justify-content: end;
+                                justify-content: flex-end;
     
                                 img {
                                     width: auto;
@@ -177,7 +177,7 @@
                         justify-content: center;
                         backdrop-filter: blur(3px);
                         background-color: #0a66c2;
-                        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+                        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
                         border-top: 1px solid rgba(255, 255, 255, 0.5);
                         border-left: 1px solid rgba(255, 255, 255, 0.5);  
 

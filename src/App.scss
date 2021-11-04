@@ -13,9 +13,9 @@
         background-color: white;
         scroll-snap-type: y mandatory;
         
-        // &::-webkit-scrollbar {
-        //     display: none;
-        // }
+        &::-webkit-scrollbar {
+            display: none;
+        }
     
         > * {
             width: 100vw;

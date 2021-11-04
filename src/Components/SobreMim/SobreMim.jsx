@@ -28,24 +28,24 @@ export default function SobreMim() {
                                 TEXTO TEXTO TEXTO TEXTO TEXTO 
                                 TEXTO TEXTO TEXTO TEXTO TEXTO 
                             </p>
-                            <a href="">
+                            <a href="#sobre-mim">
                                 Baixar CV
                                 <BiDownload className='icone'/>
                             </a>
-                            <div className="tecnologias">
+                            <div className="habilidades">
                                 <h4>Habilidades</h4>
                                 <div className='lista'>
-                                    <SiHtml5 className='icone'/>
-                                    <SiCss3 className='icone'/>
-                                    <SiJavascript className='icone'/>
-                                    <SiTypescript className='icone'/>
-                                    <SiReact className='icone'/>
-                                    <SiNodedotjs className='icone'/>
-                                    <SiPython className='icone'/>
-                                    <SiCplusplus className='icone'/>
-                                    <SiGit className='icone'/>
-                                    <SiGithub className='icone'/>
-                                    <SiFigma className='icone'/>
+                                    <SiHtml5 className='tecnologias'/>
+                                    <SiCss3 className='tecnologias'/>
+                                    <SiJavascript className='tecnologias'/>
+                                    <SiTypescript className='tecnologias'/>
+                                    <SiReact className='tecnologias'/>
+                                    <SiNodedotjs className='tecnologias'/>
+                                    <SiPython className='tecnologias'/>
+                                    <SiCplusplus className='tecnologias'/>
+                                    <SiGit className='tecnologias'/>
+                                    <SiGithub className='tecnologias'/>
+                                    <SiFigma className='tecnologias'/>
                                 </div>
                             </div>
                         </div>

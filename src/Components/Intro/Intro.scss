@@ -25,7 +25,7 @@
                 flex: 0.8;
                 display: flex;
                 align-items: center;
-                justify-content: start;
+                justify-content: flex-start;
                 
                 .pacote {
                     display: flex;
@@ -207,11 +207,3 @@
         transform: translate(0, 5px);
     }
 }
-
-/*
-Notas
-
-Me sinto tão Sol
-Sem Ré, sem Dó e
-Me desifra pela cifra
-*/

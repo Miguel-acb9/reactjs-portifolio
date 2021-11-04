@@ -43,7 +43,7 @@ export default function Contato() {
                                 </div>
                                 <div className="email-telefone">
                                     <input name='email' type='text' placeholder='E-mail'/>
-                                    <input name='telefone' type='text' placeholder='Telefone'/>
+                                    <input name='telefone' type='number' placeholder='Telefone'/>
                                 </div>
                                 <div className="assunto">
                                 <input name='assunto' type='text' placeholder='Assunto'/>
@@ -51,7 +51,7 @@ export default function Contato() {
                                 <div className="mensagem">
                                     <textarea placeholder='Mensagem' name="" id="" cols="0" rows="8"></textarea>
                                 </div>
-                                <a href="">
+                                <a href='#contato'>
                                     Enviar
                                     <BiSend className='icone'/>
                                 </a>
@@ -63,3 +63,15 @@ export default function Contato() {
         </section>
     );
 }
+
+/*
+
+[(][0-9]{2}[)]
+[0-9]{1}[.]
+[0-9]{4}[-]
+[0-9]{4}
+
+
+
+
+*/

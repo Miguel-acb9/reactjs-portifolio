@@ -1,20 +1,18 @@
 // Estilo do Rodapé
 
 .rodape {
+    width: 100%;
     height: 20vh;
-    color: black;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../../Assets/FundoBanner.png);
+    background-color: #0A66C2;
     
     .rodape-vertical {
         display: flex;
         width: inherit;
-        height: inherit;
+        height: 100%;
         position: relative;
         align-items: center;
         flex-direction: column;
-        background: linear-gradient(to bottom, #fff 20%, transparent 90%);
+        box-shadow: 0 -50px 20px #ddd;
 
         .rodape-horizontal {
             width: 100%;
@@ -27,6 +25,12 @@
                 font-size: 20px;
                 font-weight: 300;
                 text-align: center;
+
+                p {
+                    color: white;
+                    font-size: 1em;
+                    font-weight: 300;
+                }
         
                 .redes-sociais {
                     display: flex;
@@ -35,13 +39,13 @@
                     justify-content: center;
                     
                     .item {
-                        color: gray;
-                        font-size: 20px;
+                        color: white;
+                        font-size: 1.2em;
                         padding: 10px 20px;
                     }
             
                     .item:hover {
-                        color: black;
+                        color: white;
                     }
                 }
             }
@@ -63,21 +67,19 @@
                 a {
                     display: flex;
                     padding: 10px;
-                    color: black;
+                    color: #0A66C2;
                     font-size: 30px;
                     font-weight: 500;
-                    background: #eee;
                     align-items: center;
                     border-radius: 10px;
                     transition: all 2s ease;
-                    border: solid 1px black;
+                    background-color: white;
                 }
     
                 a:hover {
-                    color: black;
+                    color: #05558f;
                     font-size: 30px;
-                    border: 1px solid black;
-                    background: linear-gradient(to top, #999 0% 10%,#aaa 20%, #ddd 50% 60%, transparent 80%);
+                    background-color: #EFEFEF;
     
                     .icone {
                         animation: scroll-para-cima 2s infinite;
@@ -100,15 +102,14 @@
         }
         
         .dev {
-            color: white;
-
             bottom: 0;
             width: 100%;
-            font-size: 1em;
+            color: white;
+            font-size: 1.2em;
             font-weight: 300;
             position: absolute;
             text-align: center;
-            background-color: #444;
+            background-color: #05558f;
         }
     }
 }
