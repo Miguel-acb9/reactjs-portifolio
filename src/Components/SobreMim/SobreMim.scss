@@ -1,35 +1,114 @@
+// Estilo da seção Sobre Mim
 
 .sobre-mim {
-    position: relative;
     display: flex;
-    padding-top: 10vh;
-    background-size: cover;
-    background-position: center;
-    background-image: url(../../Assets/FundoBanner.png);
+    position: relative;
 
-    .sobre-mim-vertical {
+    .sobre-mim_vertical {
         width: 100%;
         height: 100%;
+        display: flex;
         position: relative;
-        text-align: center;
+        flex-direction: column;
 
-        h2 {
-            color: black;
-            font-weight: 500;
-            font-size: 2.5em;
-        }
-        h3 {
-            color: gray;
-            font-weight: 300;
-            font-size: 1.2em;
-        }
+        .sobre-mim_horizontal {
+            width: 100%;
+            height: 100%;
+            
+            .titulo {
+                margin: 6vh;
+                text-align: center;
+    
+                h2 {
+                    color: black;
+                    font-weight: 500;
+                    font-size: 2.5em;
+                }
+                h3 {
+                    color: gray;
+                    font-weight: 300;
+                    font-size: 1.2em;
+                }
+            }
 
-        .sobre-mim-horizontal {
-            display: flex;
-            padding-top: 5vh;
-            align-items: center;
-            justify-content: center;
-            justify-content: space-around;
+            .conteiner {
+                width: 100%;
+                height: 70%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .foto {
+                    flex: 0.5;
+                    padding: 3vh;
+                    display: flex;
+                    justify-content: end;
+
+                    .cartao {
+                        width: 500px;
+                        height: 500px;
+                        border-radius: 30px;
+                        background-size: cover;
+                        background-position: center;
+                        background-image: url(http://localhost:3000/Assets/Miguel.jpeg);
+                    }
+                }
+
+                .descricao {
+                    flex: 0.5;
+                    p {
+                        width: 50%;
+                    }
+    
+                    .icone {
+                        margin: 0;
+                        padding: 0;
+                        color: white;
+                        font-size: 25px;
+                        padding: 5px 10px;
+                    }
+    
+                    a {
+                        width: 40%;
+                        padding: 5px;
+                        display: flex;
+                        color: white;
+                        font-size: 1em;
+                        font-weight: 500;
+                        margin-top: 20px;
+                        align-items: center;
+                        border-radius: 10px;
+                        text-decoration: none;
+                        justify-content: center;
+                        transition: all 1s ease;
+                        background-color: #0a66c2;
+                    }
+                    
+                    a:hover {
+                        color: white;
+                        background-color: #05558f;
+                    }
+
+                    .tecnologias {
+                        width: 50%;
+                        text-align: center;
+                        h4 {
+                            font-size: 1.2em;
+                            padding: 2vh 0;
+                        }
+                        .lista {
+                            display: flex;
+                            color: #0a66c2;
+                            justify-content: space-between;
+
+                            .icone {
+                                color: #0a66c2;
+                                font-size: 2em;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

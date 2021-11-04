@@ -51,7 +51,7 @@
                         .area-icone {
                             margin: 0;
                             padding: 0;
-                            color: black;
+                            color: #0a66c2;
                             font-size: 40px;
                             padding: 5px 10px;
                         }
@@ -87,111 +87,115 @@
                     border-radius: 15px;
                     align-items: center;
                     justify-content: center;
-                    backdrop-filter: blur(3px);
-                    background: rgba(255, 255, 255, 0.05);
-                    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-                    border-top: 1px solid rgba(255, 255, 255, 0.5);
-                    border-left: 1px solid rgba(255, 255, 255, 0.5);  
     
                     .nome {
-                        padding: 20px 5px;
+                        padding: 10px 5px;
                         
                         input {
+                            width: 98%;
+                            padding: 1vh;
+                            border: none;
                             color: black;
-                            width: 99%;
-                            font-size: 1.5rem;
-                            border: 1px solid black;
-                            background-color: rgba(0, 0, 0, 0.1);
+                            font-size: 1.5em;
+                            border-radius: 10px;
+                            background-color: #EFEFEF;
                         }
                     }
     
                     .email-telefone {
                         display: flex;
-                        padding: 20px 5px;
+                        padding: 10px 5px;
                         flex-direction: row;
                         justify-content: space-between;
     
                         input { 
-                            width: 45%;
-                            font-size: 1.5rem;
-                            border: 1px solid black;
-                            background-color: rgba(0, 0, 0, 0.1);
+                            width: 47%;
+                            padding: 1vh;
+                            border: none;
+                            color: black;
+                            font-size: 1.5em;
+                            border-radius: 10px;
+                            background-color: #EFEFEF;
                         }
                     }
     
                     .assunto {
-                        padding: 20px 5px;
-
-                        select {
-                            width: 99.9%;
-                            font-size: 1.5rem;
-                            border: 1px solid black;
-                            background-color: rgba(0, 0, 0, 0.1);
+                        padding: 10px 5px;
+                        
+                        input {
+                            width: 98%;
+                            padding: 1vh;
+                            border: none;
+                            color: black;
+                            font-size: 1.5em;
+                            border-radius: 10px;
+                            background-color: #EFEFEF;
                         }
                     }
     
                     .mensagem {
-                        padding: 20px 5px;
+                        padding: 10px 5px;
 
                         textarea {
                             resize: none;
-                            width: 99.9%;
-                            font-size: 1.5rem;
-                            border: 1px solid black;
-                            background-color: rgba(0, 0, 0, 0.1);
+                            width: 98%;
+                            padding: 1vh;
+                            border: none;
+                            color: black;
+                            font-size: 1.5em;
+                            border-radius: 10px;
+                            background-color: #EFEFEF;;
                         }
                     }
     
                     .icone {
                         margin: 0;
                         padding: 0;
-                        color: black;
+                        color: white;
                         font-size: 30px;
-                        padding: 0 10px;
+                        padding: 5px 10px;
                     }
         
                     a {
                         width: 20%;
-                        padding: 15px;
+                        padding: 10px;
                         display: flex;
-                        color: black;
-                        font-size: 18px;
+                        color: white;
+                        font-size: 1.2em;
                         font-weight: 500;
-                        margin-top: 20px;
-                        background: #eee;
+                        margin-top: 10px;
                         align-items: center;
                         border-radius: 10px;
                         text-decoration: none;
                         justify-content: center;
-                        transition: all 2s ease;
-                        border: solid 1px black;
+                        transition: all 1s ease;
+                        background-color: #0a66c2;
                     }
         
                     a:hover {
-                        color: black;
-                        border: 1px solid black;
-                        background: linear-gradient(60deg, #888 0% 10%,#999 20%, #aaa 40% 60%, #fff 80%);
+                        color: white;
+                        background-color: #05558f;
         
                         .icone {
-                            animation: scroll-para-baixo 2s infinite;
-                        }
-                    }
-        
-                    @keyframes scroll-horizontal {
-                        0% {
-                            opacity: 0;
-                            transform: translate(-5px, 0);
-                        } 
-                        50% {
-                            opacity: 1;
-                        }
-                        100% {
-                            opacity: 0;
-                            transform: translate(5px, 0);
+                            animation: scroll-horizontal 2s infinite;
                         }
                     }
                 }
             }
         }
+    }
+}
+
+@keyframes scroll-horizontal {
+    0% {
+        opacity: 0;
+        transform: translate(-5px, 0);
+    } 
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(5px, 0);
     }
 }

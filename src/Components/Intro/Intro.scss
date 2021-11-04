@@ -22,17 +22,18 @@
             background: linear-gradient(to right, #fff 10%, transparent 90%);
 
             .direita {
-                flex: 0.9;
+                flex: 0.8;
                 display: flex;
-                padding-left: 20vh;
-                align-items: center;  
+                align-items: center;
+                justify-content: start;
                 
                 .pacote {
                     display: flex;
                     flex-direction: column;
+
                     .apresentacao {
                         h1 {
-                            font-size: 2.5em;
+                            font-size: 2.8em;
 
                             span {
                                 color: black;
@@ -40,37 +41,38 @@
                             }
 
                             span:hover {
-                                color: gray;
+                                color: #0a66c2;
                                 animation: bounce .5s ease-out;
                             }
 
                             @keyframes bounce {
                                 0% { bottom: 0; }
-                                60% { bottom: 5px; color: #333; }
+                                60% { bottom: 5px; color: #05558f; }
                                 100% { bottom: 0; }
                             }
                         }
                     }
 
-
                     h3 {
-                        font-size: 1.5em;
+                        font-size: 2em;
+                        margin-top: 1.8vh;
+
                         .ocupacao {
                             font-weight: 300;
                         }
                     }
 
                     p {
-                        font-size: 18px;
-                        margin-top: 15px;
+                        margin-top: 2vh;
                         font-weight: 300;
+                        font-size: 1.5em;  
                     }
 
                     .pacote-btn {
                         .icone {
                             margin: 0;
                             padding: 0;
-                            color: black;
+                            color: white;
                             font-size: 30px;
                             padding: 5px 10px;
                         }
@@ -79,40 +81,24 @@
                             width: 40%;
                             padding: 15px;
                             display: flex;
-                            color: black;
-                            font-size: 18px;
+                            color: white;
+                            font-size: 1.2em;
                             font-weight: 500;
                             margin-top: 20px;
-                            background: #eee;
                             align-items: center;
                             border-radius: 10px;
                             text-decoration: none;
                             justify-content: center;
-                            transition: all 2s ease;
-                            border: solid 1px black;
+                            transition: all 1s ease;
+                            background-color: #0a66c2;
                         }
     
                         a:hover {
-                            color: black;
-                            border: 1px solid black;
-                            background: linear-gradient(60deg, #888 0% 10%,#999 20%, #aaa 40% 60%, transparent 80%);
+                            color: white;
+                            background-color: #05558f;
 
                             .icone {
                                 animation: scroll-para-baixo 2s infinite;
-                            }
-                            
-                        }
-                        @keyframes scroll-para-baixo {
-                            0% {
-                                opacity: 0;
-                                transform: translate(-5px, 0);
-                            } 
-                            50% {
-                                opacity: 1;
-                            }
-                            100% {
-                                opacity: 0;
-                                transform: translate(5px, 0);
                             }
                         }
                     }
@@ -120,24 +106,25 @@
             }
 
             .esquerda {
-                flex: 0.1;
+                flex: 0.2;
                 display: flex;
                 align-items: center;
+                justify-content: center;
 
                 .redes-sociais {
                     display: flex;
                     flex-wrap: nowrap;
-                    padding-left: 10vh;
                     flex-direction: column;
+                    justify-content: center;
                     
                     .item {
-                        color: black;
-                        font-size: 35px;
-                        margin: 5vh 10px;
+                        color: #0a66c2;
+                        font-size: 30px;
+                        margin: 2vh 10px;
                     }
             
                     .item:hover {
-                        color: gray;
+                        color: #05558f;
                         transition: all .5s ease;
                     }
                 }
@@ -147,7 +134,7 @@
         .role-para-baixo {
             left: 0; 
             right: 0; 
-            bottom: 1vh;
+            bottom: 2vh;
             display: flex;
             margin-left: auto; 
             margin-right: auto;
@@ -155,6 +142,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: center;
+            transition: all 1s ease;
             
             a {
                 color: black;
@@ -163,56 +151,67 @@
                 
                 .item-mouse {
                     margin: 0 5px;
-                    color: black;
+                    color: #0a66c2;
                     font-size: 35px;
                 }
 
                 .item-mouse:hover {
-                    color: gray;
+                    color: #05558f;
                     transition: all 1s ease;
                 }
 
                 .item-seta {
-                    color: black;
+                    color: #0a66c2;
                     font-size: 35px;
                     margin: 1px 5px;
                     animation: scroll-vertical 2s infinite;
                 }
 
                 .item-seta:hover {
-                    color: gray;
+                    color: #05558f;
                     transition: all 2s ease;
                 }
-
-                @keyframes scroll-vertical {
-                    0% {
-                        opacity: 0;
-                        transform: translate(0, -5px);
-                    } 
-                    50% {
-                        opacity: 1;
-                    }
-                    100% {
-                        opacity: 0;
-                        transform: translate(0, 5px);
-                    }
-                }
-            } 
-            
-            a:hover {
-                color: gray;
-                transition: all 1s ease;
             } 
         }
+
+        .role-para-baixo:hover {
+            bottom: 1vh;
+            transition: all 1s ease;
+        }
+    }
+}
+@keyframes scroll-para-baixo {
+    0% {
+        opacity: 0;
+        transform: translate(-5px, 0);
+    } 
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(5px, 0);
+    }
+}
+
+@keyframes scroll-vertical {
+    0% {
+        opacity: 0;
+        transform: translate(0, -5px);
+    } 
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, 5px);
     }
 }
 
 /*
-
 Notas
 
 Me sinto tão Sol
 Sem Ré, sem Dó e
 Me desifra pela cifra
-
 */

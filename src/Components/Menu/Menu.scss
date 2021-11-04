@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     transition: all 1s ease;
-    background: linear-gradient(70deg, #ccc 10%,#fff 40%, transparent);
+    background: linear-gradient(70deg, #05558f 10%,#0A66C2 40%, transparent);
 
     &.ativo {
         right: 0;
@@ -30,12 +30,12 @@
                 margin-bottom: 30px;
     
                 a {
-                    color: black;
+                    color: white;
                     font-size: 25px;
                     text-decoration: none;
                 }
                 
-                &:hover {
+                a:hover {
                     font-weight: 500;
                 }
             }
@@ -55,13 +55,13 @@
             flex-direction: row;
             
             .item {
-                color: gray;
+                color: white;
                 font-size: 20px;
                 padding: 10px 20px;
             }
     
             .item:hover {
-                color: black;
+                color: #05558f;
             }
         }
     }

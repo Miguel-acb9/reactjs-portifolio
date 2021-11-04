@@ -32,7 +32,7 @@ export default function Contato() {
                                 <div className="area-icone"><SiGooglemaps /></div>
                                 <div className="area-texto">
                                     <h3>Localização</h3>
-                                    <span>Goiânia, Goiás, Brasil, 74265-240</span>
+                                    <span>74265-240, Goiás, Brasil</span>
                                 </div>
                             </div>
                         </div>
@@ -46,16 +46,10 @@ export default function Contato() {
                                     <input name='telefone' type='text' placeholder='Telefone'/>
                                 </div>
                                 <div className="assunto">
-                                    <select required>
-                                        <option select disable hidden>Assunto</option>
-                                        <option value='emprego'>Emprego</option>
-                                        <option value='estagio'>Estágio</option>
-                                        <option value='freelance'>Freelance</option>
-                                        <option value='outro'>Outro</option>
-                                    </select>
+                                <input name='assunto' type='text' placeholder='Assunto'/>
                                 </div>
                                 <div className="mensagem">
-                                    <textarea name="" id="" cols="0" rows="8"></textarea>
+                                    <textarea placeholder='Mensagem' name="" id="" cols="0" rows="8"></textarea>
                                 </div>
                                 <a href="">
                                     Enviar

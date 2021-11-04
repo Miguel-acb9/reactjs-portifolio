@@ -38,10 +38,8 @@ export default function Portifolio() {
                         <h3>Trabalhos Recentes</h3>
                     </div>
                     <div className='conteiner'>
-
-
                         <div className="carrossel">
-                            <button className='butao-proximo' onClick={handleClickAnterior}><BiLeftArrow /></button>
+                        <button className='butao-anterior' onClick={handleClickAnterior}><BiLeftArrow /></button>
                             <div className="conteudo" ref={carrossel}>
                                 {dados.map((item) => {
                                     const { id, nomeProjeto, textoProjeto, imagem } = item;
@@ -63,13 +61,8 @@ export default function Portifolio() {
                                     );
                                 })}
                             </div>
-                            <button className='butao-anterior' onClick={handleClickProximo}><BiRightArrow /></button>
+                            <button className='butao-proximo' onClick={handleClickProximo}><BiRightArrow /></button>
                         </div>
-                    
-                        
-                        
-                        
-
                         <div className="banner">
                             <Tilt className='cartao' options={{max: 10, scale: 1}}>
                                 <div className="conteudo">

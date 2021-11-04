@@ -1,6 +1,7 @@
 // Importação de módulos e bibliotecas
 import './Servicos.scss';
 import Tilt from 'react-tilt';
+import { BiSend } from "react-icons/bi";
 
 export default function Servicos() {
     return (
@@ -17,7 +18,7 @@ export default function Servicos() {
                                 <h2>01</h2>
                                 <h3>Cartão Um</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ladore et dolore magna aliqua.</p>
-                                <a href="#">Ler mais</a>
+                                <a href="#">Ler mais<BiSend className='icone'/></a>
                             </div>
                         </Tilt>
                         <Tilt className='cartao' options={{max: 40}}>
@@ -25,7 +26,7 @@ export default function Servicos() {
                                 <h2>02</h2>
                                 <h3>Cartão Dois</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ladore et dolore magna aliqua.</p>
-                                <a href="#">Ler mais</a>
+                                <a href="#">Ler mais<BiSend className='icone'/></a>
                             </div>
                         </Tilt>
                         <Tilt className='cartao' options={{max: 40}}>
@@ -33,7 +34,7 @@ export default function Servicos() {
                                 <h2>03</h2>
                                 <h3>Cartão Três</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ladore et dolore magna aliqua.</p>
-                                <a href="#">Ler mais</a>
+                                <a href="#">Ler mais<BiSend className='icone'/></a>
                             </div>
                         </Tilt>
                         <Tilt className='cartao' options={{max: 40}}>
@@ -41,7 +42,7 @@ export default function Servicos() {
                                 <h2>04</h2>
                                 <h3>Cartão Quatro</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ladore et dolore magna aliqua.</p>
-                                <a href="#">Ler mais</a>
+                                <a href="#">Ler mais<BiSend className='icone'/></a>
                             </div>
                         </Tilt>
                         <script src='jquery.js'></script>

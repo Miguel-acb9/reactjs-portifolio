@@ -8,8 +8,6 @@ import Contato from './Components/Contato/Contato';
 import SobreMim from './Components/SobreMim/SobreMim';
 import Servicos from './Components/Servicos/Servicos';
 import Portifolio from './Components/Portifolio/Portifolio';
-import Habilidades from './Components/Habilidades/Habilidades';
-import Qualificacao from './Components/Qualificacao/Qualificacao';
 import MenuSuperior from './Components/MenuSuperior/MenuSuperior';
 
 function App() {
@@ -25,8 +23,6 @@ function App() {
                 <SobreMim/>
                 <Servicos/>
                 <Portifolio/>
-                <Qualificacao/>
-                <Habilidades/>
                 <Contato/>
                 <footer><Rodape/></footer> 
             </div>

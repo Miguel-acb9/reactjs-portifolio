@@ -88,14 +88,37 @@
                             padding-top: 10px;
                         }
 
+                        .icone {
+                            margin: 0;
+                            padding: 0;
+                            color: white;
+                            font-size: 25px;
+                            padding: 5px 10px;
+                        }
+
                         a {
-                            color: black;
-                            margin-top: 15px;
-                            padding: 8px 20px;
-                            position: relative;
-                            background: gray;
-                            border-radius: 20px;
-                            display: inline-block;
+                            width: 60%;
+                            padding: 5px;
+                            display: flex;
+                            color: white;
+                            font-size: 1em;
+                            font-weight: 500;
+                            margin-top: 20px;
+                            align-items: center;
+                            border-radius: 10px;
+                            text-decoration: none;
+                            justify-content: center;
+                            transition: all 1s ease;
+                            background-color: #0a66c2;
+                        }
+                        
+                        a:hover {
+                            color: white;
+                            background-color: #05558f;
+
+                            .icone {
+                                animation: scroll-para-baixo 2s infinite;
+                            }
                         }
                     }                    
                 }
